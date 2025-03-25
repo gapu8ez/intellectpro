@@ -1,0 +1,115 @@
+/* Header Styles */
+.header {
+  display: relative;
+  align-items: center;
+  justify-content: space-between; /* Ensures space between logo, nav, and actions */
+  padding: 8px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Use relative positioning instead of 'center' */
+  width: 100%; /* Ensure the header takes the full width of the screen */
+  box-sizing: border-box; /* Prevents padding from affecting width */
+  top: 0;
+  left: 0;
+  z-index: 100;
+  
+}
+
+/* Logo Section */
+.logo-container {
+  display: grid;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d4a017;
+  margin-left: 8px;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 50px;
+  flex-grow: 2; /* Ensures nav takes the available space */
+  justify-content: center; /* Center the nav menu */
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #d4a017;
+}
+
+/* Right Side Actions */
+.actions {
+  display: flex; /* Change inline-flex to flex */
+  align-items: center; /* Center items vertically */
+  gap: 12px;
+  justify-content: flex-end; /* Align buttons to the right */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Button Styling */
+.quote-btn {
+  background-color: #22c55e;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer; 
+  transition: background 0.3s;
+}
+
+.quote-btn:hover {
+  background-color: #16a34a;
+  transition: 1s;
+}
+.language-switcher {
+  position: absolute;
+  cursor: pointer;
+  margin-left: 1700px;
+  top: 20px;
+}
+
+
+/* Responsive behavior - Optional: Add responsiveness */
+@media (max-width: 500px) {
+  .header {
+    padding: 8px 16px;
+  }
+
+  .nav {
+    gap: 8px;
+  }
+
+  .actions {
+    gap: 8px;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+  }
+}
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s ease-in-out;
+  border-bottom: 2px solid transparent; /* Изначально без подчеркивания */
+}
+
+.nav a:hover {
+  color: #d4a017;
+  border-bottom: 2px solid #d4a017; /* Подчеркивание при наведении */
+}

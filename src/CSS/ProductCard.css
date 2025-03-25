@@ -1,0 +1,59 @@
+/* Product Card үндсэн стиль */
+.product-card {
+  position: relative;
+  width: 150px;
+  height: 379px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-top: 100px;
+}
+
+/* Hover үед томрох */
+.product-card:hover {
+  width: 270px;
+}
+
+/* Зураг */
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Хар өнгийн давхарга */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 1; /* Overlay байнга харагдах */
+  transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* Hover үед илрэх */
+.product-card:hover .overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Гарчиг */
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(3, 3, 3);
+  transition: transform 0.3s ease-in-out; /* Transform transition нэмэх */
+  transform: rotate(-90deg); /* Гарчиг далий болгох */
+  text-align: center;
+}
+
+/* Hover үед гарчиг тэгшрэх */
+.product-card:hover .product-title {
+  transform: rotate(0); /* Гарчиг тэгш болгох */
+}

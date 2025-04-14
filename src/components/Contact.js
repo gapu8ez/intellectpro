@@ -2,7 +2,7 @@ import React from 'react';
 import '../CSS/ContactUs.css';
 
 const Contact = () => {
-  const emailAddress = 'таны_мэйл@gmail.com'; // Өөрийн мэйл хаягаа энд оруулна уу
+  const emailAddress = 'info@intellectpro.mn'; // Өөрийн мэйл хаягаа энд оруулна уу
 
   const handleEmailClick = () => {
     window.location.href = `mailto:${emailAddress}`;
@@ -20,25 +20,14 @@ const Contact = () => {
       <div className="contact-info">
         <h3>Манай Мэдээлэл</h3>
         <p>
-          <strong>Хаяг:</strong> 123 Гол Гудамж, Хотхон, Улс
+          <strong>Хаяг:</strong> Ikh Mongol Street, 355A bldg 301 Bayanzurkh District, Ulaanbaatar
         </p>
         <p>
           <strong>Утас:</strong> +1 (555) 123-4567
         </p>
         <p>
-          <strong>Мэйл:</strong> info@example.com
+          <strong>Мэйл:</strong> info@intellectpro.mn
         </p>
-        <div className="social-links">
-          <a href="#" className="social-icon">
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a href="#" className="social-icon">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#" className="social-icon">
-            <i className="fab fa-instagram"></i>
-          </a>
-        </div>
       </div>
     </div>
   );

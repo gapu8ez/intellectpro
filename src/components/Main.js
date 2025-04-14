@@ -1,11 +1,14 @@
 import React from 'react';
 import "../CSS/Main.css";
+import { useNavigate } from 'react-router-dom';
 
 function CompanyInfo() {
+  const navigate = useNavigate();
+
   return (
     <div className="container">
       <div className="image-section">
-        <img src="/tall.jpg" alt="Компанийн зураг" />
+      <img src={process.env.PUBLIC_URL + "/mongol.webp"} alt="Mongol" />
       </div>
       <div className="text-section">
         <h1>Манай компани</h1>
@@ -19,7 +22,7 @@ function CompanyInfo() {
           <li>✔ Инноваци ба дэвшилт</li>
           <li>✔ Харилцагч төвтэй бодлого</li>
         </ul>
-        <button onClick={() => alert('Манай компани дэлгэрэнгүй мэдээллийг удахгүй оруулна!')}>Дэлгэрэнгүй</button>
+        <button onClick={() => navigate("/about")}>Дэлгэрэнгүй</button>
       </div>
     </div>
   );

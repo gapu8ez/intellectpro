@@ -2,9 +2,10 @@ import React from "react";
 const Infos = () => {
     return (
       <>
-        
-
-      <div style={{position:"relative",marginTop:"600px", padding: "20px", textAlign: "center", width:"100%", overflowY: "scroll", minHeight:"100vh" }}>
+      <div style={{position:"relative",marginTop:"650px", padding: "20px", textAlign: "left", width:"100%", overflowY: "scroll", minHeight:"100vh" }}>
+      <a href="https://legalinfo.mn/en/detail/111" target="_blank" rel="noopener noreferrer">
+  <button>Legal Info</button>
+</a>
         <h1>Мэдээ мэдээлэл</h1>
         <h2>Оюуны өмч гэж юу вэ?</h2>
         <p>Оюуны өмч нь хувь хүн болон байгууллагын бүтээсэн шинэ санаа, зохиол, урлагийн бүтээл, патент, барааны тэмдэг зэрэг оюуны болон бүтээлч хөдөлмөрийн үр дүнг хамгаалах хууль эрх зүйн тогтолцоо юм.</p>

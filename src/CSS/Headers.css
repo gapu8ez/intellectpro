@@ -1,28 +1,27 @@
 /* Header Styles */
 .header {
-  display: relative;
-  align-items: center;
-  justify-content: space-between; /* Ensures space between logo, nav, and actions */
+  display: flex; /* зассан */
+  align-items: center; /* босоогоор голлуулах */
+  justify-content: space-between; /* logo, nav хоёрын хооронд зай */
   padding: 8px 20px;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed; /* Use relative positioning instead of 'center' */
-  width: 100%; /* Ensure the header takes the full width of the screen */
-  box-sizing: border-box; /* Prevents padding from affecting width */
+  position: fixed; /* Топ хэсэгт наалдуулсан */
+  width: 100%;
+  box-sizing: border-box;
   top: 0;
   left: 0;
   z-index: 100;
-  
 }
 
 /* Logo Section */
 .logo-container {
-  display: grid;
-  align-items: center;
+  display: flex; /* flex болгоно */
+  align-items: center; /* logo + text босоо голд */
 }
 
 .logo {
-  height: 32px;
+  height: 30px; /* жаахан томруулж болно */
 }
 
 .logo-text {
@@ -35,9 +34,10 @@
 /* Navigation */
 .nav {
   display: flex;
+  align-items: center; /* босоо голлуулалт */
   gap: 50px;
-  flex-grow: 2; /* Ensures nav takes the available space */
-  justify-content: center; /* Center the nav menu */
+  justify-content: right;
+  flex-grow: 1;
 }
 
 .nav a {
@@ -75,13 +75,6 @@
   background-color: #16a34a;
   transition: 1s;
 }
-.language-switcher {
-  position: absolute;
-  cursor: pointer;
-  margin-left: 1700px;
-  top: 20px;
-}
-
 
 /* Responsive behavior - Optional: Add responsiveness */
 @media (max-width: 500px) {

@@ -2,9 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import "../CSS/ImageSlider.css";
 
 const images = [
-  "/intpro.png",
-  "/logo512.png",
-  "/intpro.png",
+  { image: process.env.PUBLIC_URL + "/filling.jpg" },
+  { image: process.env.PUBLIC_URL + "/search.jpg" },
+  { image: process.env.PUBLIC_URL + "/post.jpg" },
+  { image: process.env.PUBLIC_URL + "/pregrant.jpg" },
+  { image: process.env.PUBLIC_URL + "/agreement.jpg" },
 ];
 
 const ImageSlider = () => {
@@ -49,12 +51,12 @@ const ImageSlider = () => {
           className="slider-images"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {images.map((image, index) => (
-            <img
-              src={image}
-              alt={`slide ${index}`}
-              key={index}
-              className="slide"
+          {images.map((imageObj, index) => (
+  <img
+    src={imageObj.image}
+    alt={`slide ${index}`}
+    key={index}
+    className="slide"
             />
           ))}
         </div>

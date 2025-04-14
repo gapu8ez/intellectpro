@@ -26,10 +26,11 @@ body {
   /* Зурагны хэсэг */
   .image-section {
     width: 50%;
+    height:100%;
   }
   
   .image-section img {
-    width: 100%;
+    width: 90%;
     height: 100%;
     object-fit: cover;
   }
@@ -74,7 +75,7 @@ body {
       flex-direction: column;
     }
     .image-section, .text-section {
-      width: 100%;
+      width: 80%;
     }
   }
   
